@@ -1,0 +1,87 @@
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Light_gray: hsl(212, 45%, 89%);
+  --Grayish_blue: hsl(220, 15%, 55%);
+  --Dark_blue: hsl(218, 44%, 22%);
+}
+
+body{
+  background-color: var(--Light_gray);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  
+  height: 450px;
+  width: 280px;
+  background-color: var(--White);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-1{
+  margin-top: 15px;
+  align-self: center;
+  height: 60%;
+  width: 90%;
+}
+
+.image{
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+.div-2, .div-3{
+  align-self: center;
+  width: 85%;
+}
+.para-1{
+  margin-top: 0;
+  text-align: center;
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--Dark_blue);
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.para-2{
+
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--Grayish_blue);
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: Outfit;
+}
+
+@media  screen and (max-width: 375px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card{
+    
+    height: 450px;
+    width: 280px;
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
